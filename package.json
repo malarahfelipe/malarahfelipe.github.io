@@ -1,0 +1,14 @@
+{
+  "name": "malarahfelipe.github.io",
+  "version": "1.0.0",
+  "description": "That's my awesome github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Malara",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
