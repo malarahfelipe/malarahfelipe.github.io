@@ -98,9 +98,11 @@
 }
 .main__container .clouds__card.ui-research {
   left: 15%;
+  bottom: 73%;
 }
 .main__container .clouds__card.ui-lead {
   right: 25%;
+  bottom: 78%;
 }
 .main__container .clouds__card.ui-arch {
   bottom: 40%;
