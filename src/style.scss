@@ -1,0 +1,48 @@
+
+/*@font-face {
+    font-family: 'circular';
+    src: url("./assets/fonts/circular_font.otf") format("opentype")
+}*/
+//variáveis
+$primary-claro: #93D5DC;
+$primary-medio1: #65C3CD;
+$primary-medio2: #32909A;
+$primary-escuro: #14393E;
+
+@import "./reset.css";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./main.scss";
+
+
+body {
+    background: linear-gradient(180deg, whitesmoke 0%, $primary-claro 100%);
+    backdrop-filter: blur(250px);
+
+    header, main, footer {
+        padding: 50px 100px;
+    }
+}
+
+strong{
+    font-weight: bold;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+}
+
+p, h2 {
+    @extend .text;
+}
+
+.icons {
+    a:not(:first-of-type) {
+        margin-left: 6px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}

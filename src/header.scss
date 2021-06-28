@@ -1,0 +1,17 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between
+    }
+    &__name {
+        @extend .text;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+    }
+    &__icons {
+        a {
+            margin-left: 10px
+        }
+    }
+}
