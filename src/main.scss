@@ -4,9 +4,14 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: 600px) {
+            flex-flow: column;
+        }
         height: 100%;
         > div {
-            width: 50%;
+            @media only screen and (min-width: 600px) {
+                width: 50%;
+            }
         }
 
         .presentation {
@@ -29,6 +34,10 @@
                     letter-spacing: -0.04em;
                     color: $primary-escuro;
                     margin-bottom: 20px;
+                    @media only screen and (max-width: 600px) {
+                        display: flex;
+                        flex-flow: column;
+                    }
                 }
 
                 p {
@@ -39,10 +48,17 @@
             &__text2 {
                 margin-top: 14px;
                 display: flex;
+                @media only screen and (max-width: 600px) {
+                    flex-flow: column;
+                    > p {
+                        margin-bottom: 20px;
+                    }
+                }
                 justify-content: start;
 
                 p {
                     font-size: 15px;
+                    width: 100%;
                     svg {
                         fill: rgb(219, 94, 94);
                         width: 17px;
@@ -54,6 +70,9 @@
                     &:first-of-type {
                         width: 65%;
                         margin-right: 15px;
+                        @media only screen and (max-width: 600px) {
+                            margin-right: 0;
+                        }
                     }
 
                     a {
@@ -80,6 +99,9 @@
             &__card {
                 background: #FFFFFF;
                 box-shadow: 0px 40px 30px rgba(25, 25, 46, 0.2);
+                @media only screen and (max-width: 600px) {
+                    box-shadow: 0px 40px 30px rgba(25, 25, 46, 0.35);
+                }
                 border-radius: 13.1532px;
                 padding: 3%;
                 width: fit-content;
@@ -88,28 +110,48 @@
 
 
                 &.ui-research {
-                    left: 15%;
-                    bottom: 73%;
+                    left: 19%;
+                    top: -10%;
+                    @media only screen and (max-width: 600px) {
+                        top: 0;
+                        left: -5%;
+                    }
                 }
 
                 &.ui-lead {
-                    right: 25%;
-                    bottom: 78%;
+                    right: 15%;
+                    top: -20%;
+                    @media only screen and (max-width: 600px) {
+                        top: -10%;
+                        right: -8%;
+                    }
                 }
 
                 &.ui-arch {
-                    bottom: 40%;
                     left: 13%;
+                    bottom: 40%;
+                    @media only screen and (max-width: 600px) {
+                        left: -9%;
+                        bottom: 35%;
+                    }
                 }
 
-                &.ui-icon {
+                &.ui-product {
+                    right: 22%;
                     bottom: 42%;
-                    right: 19%;
+                    @media only screen and (max-width: 600px) {
+                        right: -9%;
+                        bottom: 48%;
+                    }
                 }
 
                 &.ui-flow {
-                    bottom: 15%;
                     left: 28%;
+                    bottom: -5%;
+                    @media only screen and (max-width: 600px) {
+                        left: -2%;
+                        bottom: -5%;
+                    }
                 }
 
                 &.profile {

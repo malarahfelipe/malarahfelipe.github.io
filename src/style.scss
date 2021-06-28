@@ -14,13 +14,32 @@ $primary-escuro: #14393E;
 @import "./footer.scss";
 @import "./main.scss";
 
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+* {
+    box-sizing: border-box;
+    //Edit:
+    margin: 0;
+    padding: 0;
+}
 body {
     background: linear-gradient(180deg, whitesmoke 0%, $primary-claro 100%);
     backdrop-filter: blur(250px);
+    width : 100%;
+    margin : 0 auto;
+    height: 100000px;
 
     header, main, footer {
+        @media only screen and (max-width: 600px) {
+            padding: 10px 30px;
+        }
         padding: 50px 100px;
+        width: 100%;
     }
 }
 
