@@ -121,6 +121,7 @@
 .main__container .clouds {
   display: flex;
   position: relative;
+  height: fit-content;
 }
 .main__container .clouds__card {
   background: #FFFFFF;
@@ -157,8 +158,8 @@
   }
 }
 .main__container .clouds__card.ui-arch {
-  left: 13%;
-  bottom: 40%;
+  left: 7%;
+  bottom: 36%;
 }
 @media only screen and (max-width: 600px) {
   .main__container .clouds__card.ui-arch {
@@ -167,8 +168,8 @@
   }
 }
 .main__container .clouds__card.ui-product {
-  right: 22%;
-  bottom: 42%;
+  right: 6%;
+  bottom: 57%;
 }
 @media only screen and (max-width: 600px) {
   .main__container .clouds__card.ui-product {
@@ -177,7 +178,7 @@
   }
 }
 .main__container .clouds__card.ui-flow {
-  left: 28%;
+  left: 37%;
   bottom: -5%;
 }
 @media only screen and (max-width: 600px) {
